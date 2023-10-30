@@ -1,1 +1,51 @@
 
+body {
+    
+}
+
+.main{
+position:relative ;
+width:200px;
+height:200px;
+
+    box-shadow:0 0 0 10px #aaf2a2;
+    border-radius:50%;
+    overflow:hidden ;
+    top:1rem;
+    left:1rem;
+    transition : 5s ease all;
+    
+}
+.num{
+display:grid;
+place-items:center;
+text-align:center  ;
+    position:absolute ;
+    width:50%;
+    
+    height:50%;
+    background-color:var(--clr);
+    transform-origin:bottom right;
+    transform:rotate(calc(45deg * var(--i)));
+}
+.btn{
+    position:relative  ;
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    z-index:2;
+    top:140px;
+    left:6rem;
+}
+.btn::before{
+    content:"";
+    width:5px;
+    background-color:coral;
+    height:20px;
+    top:0;
+    left:19px;
+    transform:translateY(-10px);
+    
+    position:absolute ;
+    
+}
